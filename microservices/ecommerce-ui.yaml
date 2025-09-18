@@ -40,7 +40,6 @@ metadata:
   name: ecommerce-ui
   namespace: ecommerce
 spec:
-  type: LoadBalancer
   ports:
   - port: 4000
     name: http
