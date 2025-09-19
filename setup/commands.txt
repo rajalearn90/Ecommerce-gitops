@@ -28,3 +28,8 @@ kubectl apply -f istio-addons/jaeger.yaml
 
 kubectl create namespace ecommerce
 kubectl label namespace ecommerce istio-injection=enabled
+
+
+after the deployment
+
+kubectl port-forward -n istio-system svc/istio-ingress 8081:80
